@@ -15,6 +15,7 @@
     <script>
         Proby = { myGlobal: 0 };
       </script>
+      
 	  
   </head>
   
@@ -32,7 +33,7 @@
             <a href="#Github">Github</a>
         </div>
       </div>  
-      
+               
      
    
 
@@ -46,6 +47,7 @@
     
      <div id="cont">  
       <form>
+	  
             <select id="select" onchange = "sprawdz(this);">
             <option value="">--Wybierz--</option>
             <option value="URL">URL</option>
@@ -129,7 +131,7 @@
         <div id = "URL'E ITP">
             
         </div>
-        
+
        
         
       </div>
@@ -733,7 +735,17 @@ albert.onload = function () {
   var ColorCode = color.hex;
   var ntcMatch  = ntc.name(ColorCode);
   console.log(ntcMatch[0]);
-  console.log(ntcMatch[1]);    
+  console.log(ntcMatch[1]);  
+      
+  if (ntcMatch[1] == "NIBBA")
+  {
+      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();
+  }
+  else if (ntcMatch[1] == "KING")
+  {
+      new Audio('https://nubet.github.io/NIBBA.TV/normalny jestes.mp3').play();
+    
+  }
   })
   .catch(e => {
    console.log(e);
@@ -1319,7 +1331,17 @@ albert.onload = function () {
   var ColorCode = color.hex;
   var ntcMatch  = ntc.name(ColorCode);
   console.log(ntcMatch[0]);
-  console.log(ntcMatch[1]);    
+  console.log(ntcMatch[1]);  
+      
+  if (ntcMatch[1] == "NIBBA")
+  {
+      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();
+  }
+  else if (ntcMatch[1] == "KING")
+  {
+      new Audio('https://nubet.github.io/NIBBA.TV/normalny jestes.mp3').play();
+    
+  }
   })
   .catch(e => {
    console.log(e);
