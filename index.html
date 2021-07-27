@@ -33,7 +33,22 @@
             <a href="#Github">Github</a>
         </div>
       </div>  
-               
+      <div id="overlay" onclick="off()">
+       <img id = "text" src="lessgo.gif">
+      </div>
+       
+       <script>
+        function on() 
+        {
+         document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() 
+        {
+          document.getElementById("overlay").style.display = "none";
+        }
+     </script>
+   
      
    
 
@@ -739,7 +754,8 @@ albert.onload = function () {
       
   if (ntcMatch[1] == "NIBBA")
   {
-      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();
+      on();
+      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();   
   }
   else if (ntcMatch[1] == "KING")
   {
@@ -1335,6 +1351,7 @@ albert.onload = function () {
       
   if (ntcMatch[1] == "NIBBA")
   {
+      on();
       new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();
   }
   else if (ntcMatch[1] == "KING")
