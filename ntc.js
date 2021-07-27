@@ -1,7 +1,8 @@
 /*
 
 +-----------------------------------------------------------------+
-|     Created by Chirag Mehta - http://chir.ag/projects/ntc       |
+|     Created by Chirag Mehta - http://chir.ag/projects/ntc  
+|     Modified by Nubet
 |-----------------------------------------------------------------|
 |               ntc js (Name that Color JavaScript)               |
 +-----------------------------------------------------------------+
