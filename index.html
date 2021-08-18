@@ -5,17 +5,16 @@
      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="style.css">
 	
 	<script src="jsdir/jquery.min.js"></script>
-        <script src="jsdir/imgcolr.html5.min.js"></script>
-        <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
+    <script src="jsdir/imgcolr.html5.min.js"></script>
+    <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
 	<script type="text/javascript" src="ntc.js"></script>
-	  
-      <script>
+    <script>
         Proby = { myGlobal: 0 };
       </script>
-      
 	  
   </head>
   
@@ -25,30 +24,15 @@
      
     <div class="header">  
  
-        <a href="#default" class="logo">NIBBA.TV</a>
+        <a href="https://nubet.github.io/NIBBA.TV/" class="logo">NIBBA.TV</a>
               
         <div class="header-right">
-            <a class="active" href="https://nubet.github.io/NIBBA.TV">Home</a>
+            <a class="active" href="https://nubet.github.io/NIBBA.TV/">Home</a>
               <a href="#Ostronie">O stronie</a>
-            <a href="https://github.com/Nubet/NIBBA.TV" target="_blank">Github</a>
+            <a href="#Github">Github</a>
         </div>
       </div>  
-      <div id="overlay" onclick="off()">
-       <img id = "text" src="lessgo.gif">
-      </div>
-       
-       <script>
-        function on() 
-        {
-         document.getElementById("overlay").style.display = "block";
-        }
-
-        function off() 
-        {
-          document.getElementById("overlay").style.display = "none";
-        }
-     </script>
-   
+      
      
    
 
@@ -62,7 +46,6 @@
     
      <div id="cont">  
       <form>
-	  
             <select id="select" onchange = "sprawdz(this);">
             <option value="">--Wybierz--</option>
             <option value="URL">URL</option>
@@ -146,7 +129,7 @@
         <div id = "URL'E ITP">
             
         </div>
-
+        
        
         
       </div>
@@ -750,18 +733,7 @@ albert.onload = function () {
   var ColorCode = color.hex;
   var ntcMatch  = ntc.name(ColorCode);
   console.log(ntcMatch[0]);
-  console.log(ntcMatch[1]);  
-      
-  if (ntcMatch[1] == "NIBBA")
-  {
-      on();
-      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();   
-  }
-  else if (ntcMatch[1] == "KING")
-  {
-      new Audio('https://nubet.github.io/NIBBA.TV/normalny jestes.mp3').play();
-    
-  }
+  console.log(ntcMatch[1]);    
   })
   .catch(e => {
    console.log(e);
@@ -1347,18 +1319,7 @@ albert.onload = function () {
   var ColorCode = color.hex;
   var ntcMatch  = ntc.name(ColorCode);
   console.log(ntcMatch[0]);
-  console.log(ntcMatch[1]);  
-      
-  if (ntcMatch[1] == "NIBBA")
-  {
-      on();
-      new Audio('https://nubet.github.io/NIBBA.TV/NYGER.mp3').play();
-  }
-  else if (ntcMatch[1] == "KING")
-  {
-      new Audio('https://nubet.github.io/NIBBA.TV/normalny jestes.mp3').play();
-    
-  }
+  console.log(ntcMatch[1]);    
   })
   .catch(e => {
    console.log(e);
@@ -1377,13 +1338,13 @@ albert.onload = function () {
        <ul class = "list">
        
        <li>
-          <a href = "#">Home</a>
+          <a href = "https://nubet.github.io/NIBBA.TV/">Home</a>
          </li>
        <li>
           <a href = "#">O projekcie</a>
         </li>
         <li>
-          <a href = "#">Github</a>
+          <a href = "https://github.com/Nubet/NIBBA.TV" target= "_blank" >Github</a>
         </li>
            
            
