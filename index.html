@@ -685,7 +685,8 @@ var albert = document.createElement("img");
 albert.crossOrigin = true;
 albert.width = albert.height = 256;
 
-albert.src = document.getElementById("UrlInput").value;
+AlsrcUrl = "http://cors-anywhere.herokuapp.com/"+ document.getElementById("UrlInput").value;
+albert.src = AlsrcUrl;
 
 cont.appendChild(albert);
 
