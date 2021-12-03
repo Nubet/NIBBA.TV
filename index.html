@@ -174,7 +174,7 @@
     function loadImage(src) 
       {
 		const img = new Image();
-		img.crossOrigin = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sILx_Vh1xSWLLI9ayfNvUmxAL2o9_FrAMg&usqp=CAU';
+		img.crossOrigin = src;
 		const canvas = document.querySelector('canvas');
 		const ctx = canvas.getContext('2d');
 
@@ -685,7 +685,8 @@ var albert = document.createElement("img");
 albert.crossOrigin = true;
 albert.width = albert.height = 256;
 
-AlsrcUrl = "http://cors-anywhere.herokuapp.com/"+ document.getElementById("UrlInput").value;
+//AlsrcUrl = "http://cors-anywhere.herokuapp.com/"+ document.getElementById("UrlInput").value;
+AlsrcUrl = document.getElementById("UrlInput").value;
 albert.src = AlsrcUrl;
 
 cont.appendChild(albert);
@@ -761,7 +762,7 @@ albert.onload = function () {
     function loadImage(src) 
       {
 		const img = new Image();
-		img.crossOrigin = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7sILx_Vh1xSWLLI9ayfNvUmxAL2o9_FrAMg&usqp=CAU';
+		img.crossOrigin = src;
 		const canvas = document.querySelector('canvas');
 		const ctx = canvas.getContext('2d');
 
